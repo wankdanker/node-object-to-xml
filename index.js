@@ -66,7 +66,10 @@ module.exports = function objectToXML(obj, namespace, depth) {
 			}
 			else {
 				if (value && typeof(value) == 'string') {
-					value = sanitizer.escape(value);
+					//avoid sanitizing CDATA sections.
+					if (value.substr(0,9) !== '<![CDATA[' && value.substr(-3) !== ']]>') {
+						value = sanitizer.escape(value);
+					}
 				}
 				
 				xml.push(value);

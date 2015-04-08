@@ -23,6 +23,8 @@ exports["basic test"] = function (test) {
 				, "#" : "value"
 			}
 		}
+		, g : "<![CDATA[ test & data ]]>"
+		, h : "<!asdf&"
 	});
 
 	var expect = ''
@@ -37,6 +39,8 @@ exports["basic test"] = function (test) {
 		+ '  </e>\n'
 		+ '  <f prop="value">value</f>\n'
 		+ '</a>\n'
+		+ '<g><![CDATA[ test & data ]]></g>\n'
+		+ '<h>&lt;!asdf&amp;</h>\n'
 		;
 	
 	test.equal(expect, str);
