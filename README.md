@@ -1,6 +1,8 @@
 node-object-to-xml
 ==================
 
+[![Build Status](https://travis-ci.org/wankdanker/node-object-to-xml.svg)](https://travis-ci.org/wankdanker/node-object-to-xml)
+
 Convert any JavaScript object to XML
 
 install
