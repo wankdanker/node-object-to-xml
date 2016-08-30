@@ -15,7 +15,7 @@ module.exports = function objectToXML(obj, namespace, depth) {
 					return key + '="' + fixupDate(value) + '"';
 				}
 				else if (value || value === 0) {
-					return key + '="' + value + '"';
+					return key + '="' + sanitizer.escape(value) + '"';
 				}
 			}, true).join(' ');
 			
