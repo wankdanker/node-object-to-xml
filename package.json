@@ -1,6 +1,6 @@
 {
   "name": "object-to-xml",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert any object to XML",
   "main": "index.js",
   "scripts": {
