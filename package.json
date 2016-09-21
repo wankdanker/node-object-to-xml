@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "dank-map": "~0.1.0",
-    "sanitizer": "0.0.15"
+    "sanitizer": "0.1.3"
   },
   "devDependencies": {
     "nodeunit": "^0.9.1"
