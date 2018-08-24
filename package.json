@@ -4,7 +4,7 @@
   "description": "Convert any object to XML",
   "main": "index.js",
   "scripts": {
-    "test": "nodeunit test/test.js"
+    "test": "tape test.js"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,11 @@
     "url": "https://github.com/wankdanker/node-object-to-xml/issues"
   },
   "dependencies": {
+    "dank-each": "^1.0.0",
     "dank-map": "~0.1.0",
     "sanitizer": "0.1.3"
   },
   "devDependencies": {
-    "nodeunit": "^0.9.1"
+    "tape": "^4.9.1"
   }
 }
